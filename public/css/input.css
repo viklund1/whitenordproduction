@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Noto+Sans+JP:wght@100..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components  {
+    .container {
+        @apply max-w-[80%] mx-auto;
+    }
+    .main-tranz {
+        transition: all .3s ease;
+    }
+    .form-input {
+        @apply bg-accentDark border-b-2 border-white w-3/4 mx-auto mt-12 py-2 focus:outline-none text-white text-xl
+    }
+    .footer-wrapper ul li {
+        @apply mt-4 main-tranz hover:text-accentYellow
+    }
+}
+@layer base {
+    body {
+        @apply font-mulish font-light
+    }
+    menu ul li {
+        @apply px-6 h-[50px] hover:bg-accentYellow flex items-center main-tranz;
+    }
+}
