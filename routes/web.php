@@ -26,3 +26,5 @@ Route::get('/contacts', function () { return view('contacts');})->name('contacts
 Route::get('/about', function () { return view('about');})->name('about');
 
 Route::get('/works', function () { return view('works');})->name('works');
+
+Route::get('/calculator', function() { return view('gas_calc');})->name('calculator');

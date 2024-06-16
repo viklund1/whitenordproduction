@@ -26,6 +26,10 @@
     .desktop-menu.open {
         @apply flex-col-reverse block
     }
+    /*calculator*/
+    .calc-form select, .calc-form input {
+        @apply h-[40px] text-black font-mulish font-light mt-2.5
+    }
 }
 @layer base {
     body {
@@ -33,5 +37,8 @@
     }
     h2 {
         @apply mt-10 xl:mt-20 text-center text-4xl lg:text-7xl
+    }
+    select {
+        @apply font-mulish font-light
     }
 }

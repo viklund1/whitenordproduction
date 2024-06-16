@@ -17,6 +17,7 @@ module.exports = {
             backgroundImage: {
                 'background': "url(../images/background.png)",
                 'form-bg' : "url(../images/form-bg.png)",
+                'calculator' : "url(../images/calc_bg.png)",
             },
         },
     },

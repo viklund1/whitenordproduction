@@ -9,7 +9,6 @@
     <meta name="description" content="@yield('description')">
     <meta name="keywords" content="@yield('keywords')">
     <script src="{{ asset('js/email_copy.js') }}"></script>
-    <script src="{{ asset('js/phone_mask.js') }}"></script>
     <link type="image/x-icon" rel="shortcut icon" href="{{ asset('images/favicon.png') }}" >
     @vite('resources/css/input.css')
     @stack('fancy')
@@ -54,6 +53,7 @@
 {{--                <li><a href="">Парк станков</a></li>--}}{{-- (( --}}
                 <li><a href="{{ route('works') }}">Наши работы</a></li>
                 <li><a href="{{ route('contacts') }}">Контакты</a></li>
+                <li><a href="{{ route('calculator') }}">Калькулятор</a></li>
             </ul>
         </div>
     </div>
@@ -70,7 +70,6 @@
             <li><a href="{{ route('services') }}">Каталог услуг</a></li>
             <li><a href="{{ route('news') }}">Новости</a></li>
             <li><a href="{{ route('about') }}">О компании</a></li>
-            <li><a href="">Парк станков</a></li>
             <li><a href="{{ route('works') }}">Наши работы</a></li>
             <li><a href="{{ route('contacts') }}">Контакты</a></li>
         </ul>
@@ -82,10 +81,10 @@
 
         <div class="social-wrapper mt-4 w-[155px] mx-auto xl:m-0">
             <div class="social-icons flex gap-2">
-                <a href="#"><img src="{{ asset('images/footer/vk.png') }}" width="35" alt="vk"></a>
-                <a href="#"><img src="{{ asset('images/footer/telegram.png') }}" width="32" alt="telegram"></a>
-                <a href="#"><img src="{{ asset('images/footer/viber.png') }}" width="32" alt="viber"></a>
-                <a href="#"><img src="{{ asset('images/footer/zen.png') }}" width="32" alt="zen"></a>
+                <a href="https://vk.com/nordheatexchanger"><img src="{{ asset('images/footer/vk.png') }}" width="35" alt="vk"></a>
+                <a href="https://t.me/wtnord_bot"><img src="{{ asset('images/footer/telegram.png') }}" width="32" alt="telegram"></a>
+                <a href="viber://pa?chatURI=whitenord"><img src="{{ asset('images/footer/viber.png') }}" width="32" alt="viber"></a>
+                <a href="https://dzen.ru/whitenord"><img src="{{ asset('images/footer/zen.png') }}" width="32" alt="zen"></a>
             </div>
 
             <a href="https://rab-it.ru/"><img class="mt-8" src="{{ asset('images/footer/logo.svg') }}" alt=""></a>

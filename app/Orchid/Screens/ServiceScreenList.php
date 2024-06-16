@@ -26,13 +26,13 @@ class ServiceScreenList extends Screen
 
     public function description(): ?string
     {
-        return 'Добавление, редактирование и удаление новостей';
+        return 'Добавление, редактирование и удаление услуг';
     }
 
     public function commandBar(): iterable
     {
         return [
-            Link::make('Добавить новость')
+            Link::make('Добавить услугу')
                 ->icon('pencil')
                 ->route('platform.services.create')
         ];
